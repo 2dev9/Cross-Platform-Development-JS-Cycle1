@@ -1,0 +1,31 @@
+{
+	"movies":[
+		{
+			"name": "Moonlight",
+			"year": 2016,
+			"genre": "Drama",
+		},
+		{
+			"name": "Mean Girls",
+			"year": 2005,
+			"genre": "Comedy",
+		},
+		{
+			"name": "Get Out",
+			"year": 2017,
+			"genre": "Horror",
+		},
+		{
+			"name":"Hidden Figures",
+			"year":2016,
+			"genre":"Drama, Action",
+		},
+		{
+			"name":"Eve's Bayou",
+			"year":1997,
+			"genre":"Drama",
+		}
+
+
+	]
+}
