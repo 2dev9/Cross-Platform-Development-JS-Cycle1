@@ -1,0 +1,22 @@
+{
+  "name": "express_example",
+  "version": "1.0.0",
+  "description": "Express example on 4/27",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/2dev9"
+  },
+  "author": "Devon Howell",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
