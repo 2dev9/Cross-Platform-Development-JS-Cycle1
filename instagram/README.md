@@ -1,3 +1,3 @@
-###Instagram Clone
+#Instagram Clone
 
-#Authors: Jen Paulino and Devon Howell
+###Authors: Jen Paulino and Devon Howell
