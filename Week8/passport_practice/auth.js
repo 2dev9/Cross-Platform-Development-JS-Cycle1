@@ -3,11 +3,11 @@ var LocalStrategy = require("passport-local").Strategy,//how we authenticate a p
 	User = require("./user");
 
 module.exports = function(passport) {
-	passport.serializedUser(function(user, done){
+	passport.serializeUser(function(user, done){
 		done(null, user);
 	});
 
-	passport.deserializedUser(function(id, done){
+	passport.deserializeUser(function(id, done){
 		done(null, id);
 	});
 
@@ -21,7 +21,10 @@ module.exports = function(passport) {
 				return done(err);
 			}
 			//if the wrong user or password
-			if(!user || !bcrypt.compareSync(password, user.password)){
+			if(!user){
+				return done(null, false);
+			}
+			if(!bcrypt.compareSync(password, user.password)){
 				return done(null, false);
 			}
 			if(user && bcrypt.compareSync(password, user.password)){

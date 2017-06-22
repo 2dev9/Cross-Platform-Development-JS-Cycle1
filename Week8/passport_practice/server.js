@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(session({
 	secret: 'issaSecret',
-	resave: true;
+	resave: true,
 	saveUninitialized: true
 }));
 
@@ -47,7 +47,7 @@ app.post("/login", passport.authenticate("local-login",{
 app.post("/signup", function(req, res){
 	new User({
 		username: req.body.username,
-		password: bcrypt.hashSync(req.body.password);
+		password: bcrypt.hashSync(req.body.password)
 	}).save(function(err){
 		if(err){
 			console.log(err);

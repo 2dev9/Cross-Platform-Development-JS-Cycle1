@@ -30,7 +30,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 682c2b0e4c50b6e567794be9879dd89b28108434
 function createToken(user) {
   var payload = {
     exp: moment().add(14, 'days').unix(),
